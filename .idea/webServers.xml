@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d602f5bf-add5-4808-8c6e-f18e08e6385e" name="seip-homework-2" url="http://localhost:8080/">
+        <fileTransfer mountedRoot="C:\xampp\htdocs\seip-project\seip-homework-2" accessType="MOUNT" port="0" />
+      </webServer>
+    </option>
+  </component>
+</project>

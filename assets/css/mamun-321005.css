@@ -1,0 +1,19 @@
+body {
+    background-color: #282A35;
+}
+
+.product-h {
+    height: 500px;
+}
+
+.product-bg-dark {
+    background-color: #282A35;
+}
+
+.product-inner-bg {
+    background-color: #F4FAF6;
+}
+
+.product-detail-h {
+    height: 500px;
+}

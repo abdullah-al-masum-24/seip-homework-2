@@ -1,0 +1,23 @@
+{
+  "name": "seip-homework-2/seip-homework-2",
+  "description": "this is a home work",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "UseR",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app//"
+    }
+  }
+}
