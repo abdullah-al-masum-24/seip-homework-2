@@ -1,10 +1,7 @@
-<?php include "header.php";
-  echo print_r($_SESSION);
-?>
-
+<?php include "header.php"; ?>
 
 <!======= Carousel Section =======>
-<section class="py-5" data-aos="zoom-in">
+<section class="py-5">
     <div class="container ">
 
         <div class="carousel slide carousel-fade " data-bs-ride="carousel" id="myBlogCarousel">

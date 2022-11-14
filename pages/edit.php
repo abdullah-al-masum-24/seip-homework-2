@@ -21,7 +21,7 @@ if (!isset($_SESSION['id'])) {
                                 <label for="" class="col-md-3">Author</label>
                                 <div class="col-md-9">
                                     <input type="text" class="form-control" name="author" value="<?php echo $getSingleBlog['author']; ?>"/>
-                                    <input type="text" class="form-control" name="id" value="<?php echo $getSingleBlog['id']; ?>"/>
+                                    <input type="text" hidden class="form-control" name="id" value="<?php echo $getSingleBlog['id']; ?>"/>
                                 </div>
                             </div>
                             <div class="row mb-3">

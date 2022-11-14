@@ -12,8 +12,12 @@ class Auth
     public function __construct($post = null)
     {
         $this->database = new Database();
-        $this->email = $post['email'];
-        $this->password = md5( $post['password'] );
+
+        if (isset($post['email'])) {
+
+            $this->email = $post['email'];
+            $this->password = md5( $post['password'] );
+        }
 
     }
 
@@ -27,10 +31,11 @@ class Auth
         if ($this->user) {
 
             session_start();
+
             $_SESSION['id']   = $this->user['id'];
             $_SESSION['name'] = $this->user['name'];
-            return print_r($_SESSION);
-//            header('location:action.php?page=dashboard');
+
+            header('location:action.php?page=add-blog');
         }
         else {
             return "Your credential is wrong";
@@ -42,6 +47,7 @@ class Auth
     public function logout() {
 
         session_start();
+
         unset($_SESSION['id']);
         unset($_SESSION['name']);
 
