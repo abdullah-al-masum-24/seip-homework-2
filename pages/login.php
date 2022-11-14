@@ -1,7 +1,7 @@
 <?php include "header.php";?>
 
 
-    <section class="py-5">
+    <section class="py-5" data-aos="fade">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 mx-auto">

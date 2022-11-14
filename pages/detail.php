@@ -9,7 +9,7 @@ if (!isset($_SESSION['id'])) {
 
 ?>
 
-    <section class="py-5">
+    <section class="py-5" data-aos="fade">
         <div class="container">
             <div class="row">
 

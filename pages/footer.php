@@ -1,5 +1,5 @@
 <footer>
-    <section class="big-footer bg-dark text-white py-5">
+    <section class="big-footer bg-dark text-white py-5 " data-aos="fade">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">

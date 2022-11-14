@@ -12,8 +12,11 @@ class Blog
         if($post != NULL) {
 
             $this->title       = $post['title'];
-            $this->author      = $post['author'];
             $this->description = $post['description'];
+
+            session_start();
+            $this->author      = $_SESSION['name'];
+
 
             if (isset($post['id'])) {
                 $this->id = $post['id'];

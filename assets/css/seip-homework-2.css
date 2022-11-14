@@ -23,3 +23,26 @@
     text-align: left;
     background: #00000078;
 }
+
+
+#mySidenav a {
+    position: fixed;
+    left: -115px;
+    transition: 0.3s;
+    padding: 10px;
+    width: 158px;
+    text-decoration: none;
+    font-size: 15px;
+    /*color: white;*/
+    /*border-radius: 0 5px 5px 0;*/
+    z-index: 2000;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 70px;
+    /*background-color: #04AA6D;*/
+}

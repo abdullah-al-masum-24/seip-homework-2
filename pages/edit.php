@@ -8,7 +8,7 @@ if (!isset($_SESSION['id'])) {
 
 ?>
 
-<section class="py-5">
+<section class="py-5" data-aos="fade">
 
     <div class="container">
         <div class="row">
@@ -20,7 +20,7 @@ if (!isset($_SESSION['id'])) {
                             <div class="row mb-3">
                                 <label for="" class="col-md-3">Author</label>
                                 <div class="col-md-9">
-                                    <input type="text" class="form-control" name="author" value="<?php echo $getSingleBlog['author']; ?>"/>
+                                    <input type="text" class="form-control" readonly name="author" value="<?php echo $getSingleBlog['author']; ?>"/>
                                     <input type="text" hidden class="form-control" name="id" value="<?php echo $getSingleBlog['id']; ?>"/>
                                 </div>
                             </div>

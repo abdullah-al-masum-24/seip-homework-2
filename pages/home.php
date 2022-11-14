@@ -1,7 +1,8 @@
 <?php include "header.php"; ?>
 
 <!======= Carousel Section =======>
-<section class="py-5">
+
+<section class="py-5" data-aos="fade">
     <div class="container ">
 
         <div class="carousel slide carousel-fade " data-bs-ride="carousel" id="myBlogCarousel">
@@ -57,6 +58,7 @@
 </section>
 
 <!======= Trending Section =======>
+
 <section class="py-1" data-aos="fade-up">
     <div class="container" >
         <div class="row">
@@ -205,6 +207,7 @@
 </section>
 
 <!======= Culture Section =======>
+
 <section  class="py-5" data-aos="fade-up">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center border-bottom border-3 border-dark">
@@ -389,6 +392,7 @@
 </section>
 
 <!======= Business Section =======>
+
 <section class="py-5" data-aos="fade-up">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center border-bottom border-3 border-dark">
@@ -573,6 +577,7 @@
 </section>
 
 <!======= LifeStyle Section =======>
+
 <section class="py-5" data-aos="fade-up">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center border-bottom border-3 border-dark">
