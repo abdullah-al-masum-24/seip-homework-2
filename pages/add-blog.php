@@ -1,5 +1,12 @@
 <?php include "header.php";?>
+<?php
 
+if (!isset($_SESSION['id'])) {
+
+    header("location:action.php?page=login");
+}
+
+?>
 
     <section class="py-5">
         <div class="container">
@@ -36,7 +43,7 @@
                                 <div class="row mb-3">
                                     <label for="" class="col-md-3"></label>
                                     <div class="col-md-9">
-                                        <input type="submit" class="btn btn-success w-100 px-5" value="New Blog" name="blog-btn"/>
+                                        <input type="submit" class="btn btn-success w-100 px-5" value="New Blog" name="blog_btn"/>
                                     </div>
                                 </div>
                             </div>

@@ -1,5 +1,13 @@
 <?php include "header.php";?>
 
+<?php
+
+if (!isset($_SESSION['id'])) {
+
+    header("location:action.php?page=login");
+}
+
+?>
 
     <section class="py-5">
         <div class="container">
@@ -14,23 +22,29 @@
                                         <th>Title</th>
                                         <th>Author</th>
                                         <th>Description</th>
-                                        <th class="">Action</th>
+                                        <th>image</th>
+                                        <th class="text-center text-primary">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Title</td>
-                                        <td>Author</td>
-                                        <td>Description</td>
-                                        <td>
-                                            <a href="" class="btn btn-sm ">
-                                                <i class="fa fa-edit"></i>
-                                            </a>
-                                            <a href="" class="btn btn-sm text-danger">
-                                                <i class="fa fa-trash "></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    <?php foreach ($getAllBlog as $blog) { ?>
+
+                                        <tr>
+                                            <td><?php echo $blog['title'];?></td>
+                                            <td><?php echo $blog['author'];?></td>
+                                            <td><?php echo $blog['description'];?></td>
+                                            <td height="50" width="50"><img src="<?php echo $blog['image'];?>" alt="" class="h-100 w-100"/></td>
+                                            <td>
+                                                <a href="action.php?page=edit&&id=<?php echo $blog['id'];?>" class="btn btn-sm text-success">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a href="action.php?page=delete&&id=<?php echo $blog['id'];?>" class="btn btn-sm text-danger" onclick="return confirm('Are you sure to delete this blog ?')">
+                                                    <i class="fa fa-trash "></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    <?php }?>
                                 </tbody>
                             </table>
                         </div>
