@@ -3,11 +3,13 @@
 require_once "vendor/autoload.php";
 use App\classes\Blog;
 use App\classes\Auth;
+use App\classes\Category;
 
 $saveResult = 'Add A New Blog';
 $getAllBlog = '';
 $getSingleBlog = '';
 $getBlogDetail = '';
+$getAllCategory = '';
 
 
 if (isset($_GET['page'])) {
@@ -62,6 +64,17 @@ if (isset($_GET['page'])) {
         $logout = new Auth();
         $logout->logout();
     }
+    elseif ($_GET['page'] == 'add-category') {
+
+        include "./pages/add-category.php";
+    }
+    elseif ($_GET['page'] == 'manage-category') {
+
+        $category = new Category();
+        $getAllCategory = $category->getAllCategory();
+
+        include "./pages/manage-category.php";
+    }
 
 }
 elseif (isset($_POST['blog_btn'])) {
@@ -81,4 +94,11 @@ elseif (isset($_POST['login_btn'])) {
     $saveResult = $login->login();
 
     include "./pages/home.php";
+}
+elseif (isset($_POST['cat_btn'])) {
+
+    $category = new Category($_POST, $_FILES);
+    $category->createCategory();
+
+    include "./pages/add-category.php";
 }

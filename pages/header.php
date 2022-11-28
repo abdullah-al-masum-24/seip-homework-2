@@ -34,7 +34,7 @@
         <div class="row">
             <div class="col-md-9">
                 <nav class="navbar navbar-expand-md">
-                    <a href="" class="navbar-brand">MyBlog</a>
+                    <a href="action.php?page=home" class="navbar-brand">MyBlog</a>
 
                     <div class="d-md-none ms-auto  d-flex  align-items-center justify-content-center">
 
@@ -86,6 +86,12 @@
                                         </li>
                                         <li>
                                             <a href="action.php?page=manage-blogs" class="dropdown-item">Manage Blogs</a>
+                                        </li>
+                                        <li>
+                                            <a href="action.php?page=add-category" class="dropdown-item">Add Category</a>
+                                        </li>
+                                        <li>
+                                            <a href="action.php?page=manage-category" class="dropdown-item">Manage Category</a>
                                         </li>
                                         <li>
                                             <a href="action.php?page=logout" class="dropdown-item">LogOut</a>

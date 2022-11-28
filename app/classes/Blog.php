@@ -42,9 +42,9 @@ class Blog
     private function moveFile() {
 
         $this->files['image']['tmp_name'];
-        $this->files['image']['name'];
+//        $this->files['image']['name'];
 
-        move_uploaded_file($this->files['image']['tmp_name'], $this->actualDirectory.$this->files['image']['name']);
+        move_uploaded_file($this->files['image']['tmp_name'], $this->image);
     }
 
     public function getBlogs() {
